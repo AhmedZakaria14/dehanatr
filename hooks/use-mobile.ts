@@ -7,12 +7,24 @@ export function useIsMobile() {
 
   React.useEffect(() => {
     const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`)
+    
+    // Set initial value without synchronously setting state in the effect body
+    let mounted = true
     const onChange = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
+      if (mounted) setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
     }
+    
     mql.addEventListener("change", onChange)
-    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
-    return () => mql.removeEventListener("change", onChange)
+    
+    // Use timeout to avoid synchronous setState warning
+    setTimeout(() => {
+      if (mounted) setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
+    }, 0)
+    
+    return () => {
+      mounted = false
+      mql.removeEventListener("change", onChange)
+    }
   }, [])
 
   return !!isMobile

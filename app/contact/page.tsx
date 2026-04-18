@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import CallButton from '@/components/CallButton';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'اتصل بمعلم دهانات الرياض | استشارة مجانية وعرض سعر',
@@ -71,33 +72,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h2 className="text-2xl font-bold text-dark-primary mb-6">أرسل استفسارك</h2>
-              <form action="#" method="POST" className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">الاسم الكريم</label>
-                  <input type="text" id="name" name="name" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition-all" placeholder="أدخل اسمك" required />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">رقم الجوال</label>
-                  <input type="tel" id="phone" name="phone" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition-all" placeholder="05xxxxxxxx" required dir="ltr" />
-                </div>
-                <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">الخدمة المطلوبة</label>
-                  <select id="service" name="service" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition-all">
-                    <option value="painting">دهانات داخلية وخارجية</option>
-                    <option value="gypsum">جبس بورد</option>
-                    <option value="epoxy">إيبوكسي</option>
-                    <option value="renovation">ترميم</option>
-                    <option value="other">أخرى</option>
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">تفاصيل الطلب (اختياري)</label>
-                  <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition-all" placeholder="اكتب تفاصيل طلبك هنا..."></textarea>
-                </div>
-                <button type="submit" className="w-full bg-gold text-dark-primary font-bold text-lg py-4 rounded-lg hover:bg-yellow-500 transition-colors mt-4">
-                  إرسال الطلب
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
 

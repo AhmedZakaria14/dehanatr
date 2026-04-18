@@ -58,7 +58,57 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="ar" dir="rtl" className={cairo.variable}>
+    <html lang="ar" dir="rtl" className={cairo.variable} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+             __html: `
+              if (typeof window !== 'undefined') {
+                const originalStringify = JSON.stringify;
+                JSON.stringify = function (value, replacer, space) {
+                  const map = new WeakSet();
+                  return originalStringify(value, function (key, val) {
+                    if (typeof val === 'object' && val !== null) {
+                      if (val instanceof HTMLElement) return '[HTMLElement]';
+                      if (val.constructor && val.constructor.name === 'FiberNode') return '[FiberNode]';
+                      if ('__reactFiber$' in val || 'stateNode' in val) return '[ReactNode]';
+                      if (map.has(val)) return '[Circular]';
+                      map.add(val);
+                    }
+                    return typeof replacer === 'function' ? replacer(key, val) : val;
+                  }, space);
+                };
+              }
+            `,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (typeof window !== 'undefined') {
+                const originalConsoleError = console.error;
+                console.error = function (...args) {
+                  const safeArgs = args.map(arg => {
+                    if (arg instanceof HTMLElement) return '[HTMLElement]';
+                    if (arg && typeof arg === 'object') {
+                      if ('__reactFiber$' in arg || 'stateNode' in arg) return '[ReactNode]';
+                      if (arg instanceof Error) return arg.toString();
+                    }
+                    return arg;
+                  });
+                  originalConsoleError.apply(console, safeArgs);
+                };
+              }
+            `,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+      </head>
       <body className="antialiased min-h-screen flex flex-col" suppressHydrationWarning>
         {children}
       </body>
