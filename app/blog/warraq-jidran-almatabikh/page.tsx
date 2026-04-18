@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
+import { siteImages } from '@/lib/siteImages';
 
 export const metadata: Metadata = {
   title: 'هل يمكن تركيب ورق جدران في المطبخ بالرياض؟ | مقالات دهانات الرياض',
@@ -11,7 +12,7 @@ export default function BlogPost3() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "هل يمكن تركيب ورق جدران في المطبخ بالرياض؟",
-    "image": "/images/uploaded/img18.jpeg",
+    "image": siteImages.blog.post3,
     "author": { "@type": "Organization", "name": "معلم دهانات الرياض" },
     "publisher": { "@type": "Organization", "name": "معلم دهانات الرياض", "logo": { "@type": "ImageObject", "url": "https://dahanat-alriyadh.com/images/logo.png" } },
     "datePublished": "2025-03-05"
@@ -20,7 +21,7 @@ export default function BlogPost3() {
   return (
     <BlogLayout
       title="هل يمكن تركيب ورق جدران في المطبخ بالرياض؟"
-      image="/images/uploaded/img19.jpeg"
+      image={siteImages.blog.post3}
       imageAlt="ورق جدران المطبخ"
       schema={articleSchema}
       ctaText="اتصل بنا الآن"

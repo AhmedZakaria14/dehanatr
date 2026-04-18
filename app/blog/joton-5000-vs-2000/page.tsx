@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
+import { siteImages } from '@/lib/siteImages';
 
 export const metadata: Metadata = {
   title: 'جوتن 5000 مقابل جوتن 2000 — أيهما أفضل لمنزلك في الرياض؟',
@@ -11,7 +12,7 @@ export default function BlogPost2() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "جوتن 5000 مقابل جوتن 2000 — أيهما أفضل لمنزلك في الرياض؟",
-    "image": "/images/uploaded/img6.jpeg",
+    "image": siteImages.blog.post2,
     "author": { "@type": "Organization", "name": "معلم دهانات الرياض" },
     "publisher": { "@type": "Organization", "name": "معلم دهانات الرياض", "logo": { "@type": "ImageObject", "url": "https://dahanat-alriyadh.com/images/logo.png" } },
     "datePublished": "2025-03-10"
@@ -20,7 +21,7 @@ export default function BlogPost2() {
   return (
     <BlogLayout
       title="جوتن 5000 مقابل جوتن 2000 — أيهما أفضل لمنزلك في الرياض؟"
-      image="/images/uploaded/img7.jpeg"
+      image={siteImages.blog.post2}
       imageAlt="مقارنة دهانات جوتن"
       schema={articleSchema}
       ctaText="تواصل معنا عبر الواتساب"

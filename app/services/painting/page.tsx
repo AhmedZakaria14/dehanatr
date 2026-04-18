@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { CheckCircle2, Shield, Droplets, PaintRoller } from 'lucide-react';
 import Header from '@/components/Header';
+import { siteImages } from '@/lib/siteImages';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import CallButton from '@/components/CallButton';
@@ -77,7 +78,7 @@ export default function PaintingServicePage() {
         <section className="relative bg-dark-primary text-white py-20">
           <div className="absolute inset-0 opacity-30">
             <Image 
-              src="/images/uploaded/img28.jpeg"
+              src={siteImages.servicePages.painting}
               alt="دهانات داخلية وخارجية بالرياض"
               fill
               className="object-cover"
@@ -108,7 +109,7 @@ export default function PaintingServicePage() {
               </div>
               <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
                 <Image 
-                  src="/images/uploaded/img29.jpeg"
+                  src={siteImages.problemSolution}
                   alt="معالجة تشققات الجدران بالرياض"
                   fill
                   className="object-cover"

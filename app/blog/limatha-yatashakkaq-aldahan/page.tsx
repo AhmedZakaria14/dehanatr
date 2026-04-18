@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
+import { siteImages } from '@/lib/siteImages';
 
 export const metadata: Metadata = {
   title: 'لماذا يتشقق الدهان بعد شهرين؟ (الأسباب الحقيقية والحل) | معلم دهانات الرياض',
@@ -11,7 +12,7 @@ export default function BlogPost1() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "لماذا يتشقق الدهان بعد شهرين؟ (الأسباب الحقيقية والحل)",
-    "image": "/images/uploaded/img10.jpeg",
+    "image": siteImages.blog.post5,
     "author": {
       "@type": "Organization",
       "name": "معلم دهانات الرياض"
@@ -30,7 +31,7 @@ export default function BlogPost1() {
   return (
     <BlogLayout
       title="لماذا يتشقق الدهان في المنازل بالرياض؟ — الأسباب والحلول"
-      image="/images/uploaded/img11.jpeg"
+      image={siteImages.blog.post5}
       imageAlt="تشقق الدهان في الجدران"
       schema={articleSchema}
       ctaText="اتصل بنا لمعاينة مجانية"

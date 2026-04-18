@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Header from '@/components/Header';
+import { siteImages } from '@/lib/siteImages';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import CallButton from '@/components/CallButton';
@@ -18,7 +19,7 @@ export default function EpoxyServicePage() {
         <section className="relative bg-dark-primary text-white py-20">
           <div className="absolute inset-0 opacity-30">
             <Image 
-              src="/images/uploaded/img33.jpeg"
+              src={siteImages.servicePages.epoxy}
               alt="دهانات إيبوكسي الرياض"
               fill
               className="object-cover"

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
+import { siteImages } from '@/lib/siteImages';
 
 export const metadata: Metadata = {
   title: 'لماذا تتهالك المظلة بعد سنة في الرياض؟ — الأسباب والحل',
@@ -11,7 +12,7 @@ export default function BlogPost4() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "لماذا تتهالك المظلة بعد سنة في الرياض؟ — الأسباب والحل",
-    "image": "/images/uploaded/img8.jpeg",
+    "image": siteImages.blog.post4,
     "author": { "@type": "Organization", "name": "معلم دهانات الرياض" },
     "publisher": { "@type": "Organization", "name": "معلم دهانات الرياض", "logo": { "@type": "ImageObject", "url": "https://dahanat-alriyadh.com/images/logo.png" } },
     "datePublished": "2025-03-01"
@@ -20,7 +21,7 @@ export default function BlogPost4() {
   return (
     <BlogLayout
       title="لماذا تتهالك المظلة بعد سنة في الرياض؟ — الأسباب والحل"
-      image="/images/uploaded/img9.jpeg"
+      image={siteImages.blog.post4}
       imageAlt="مظلات الرياض"
       schema={articleSchema}
       ctaText="اطلب تركيب مظلة بضمان"

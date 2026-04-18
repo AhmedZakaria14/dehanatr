@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import CallButton from '@/components/CallButton';
+import { siteImages } from '@/lib/siteImages';
 
 export const metadata: Metadata = {
   title: 'مقالات دهانات الرياض | نصائح وحلول لمشاكل الدهانات',
@@ -16,42 +17,42 @@ const blogPosts = [
     slug: 'limatha-yatashakkaq-aldahan',
     title: 'لماذا يتشقق الدهان بعد شهرين؟ (الأسباب الحقيقية والحل)',
     excerpt: 'تعرف على الأسباب الحقيقية وراء تشقق الدهان في منازل الرياض وكيفية معالجة الرطوبة قبل الدهان لضمان نتيجة تدوم طويلاً.',
-    img: '/images/uploaded/img12.jpeg',
+    img: siteImages.blog.post5, // Mapping changed to post5 for consistency with title
     date: '15 مارس 2025'
   },
   {
     slug: 'joton-5000-vs-2000',
     title: 'جوتن 5000 مقابل جوتن 2000 — أيهما أفضل لمنزلك في الرياض؟',
     excerpt: 'مقارنة شاملة بين أشهر أنواع دهانات جوتن لمساعدتك في اختيار الأنسب لاحتياجاتك وميزانيتك.',
-    img: '/images/uploaded/img13.jpeg',
+    img: siteImages.blog.post2,
     date: '10 مارس 2025'
   },
   {
     slug: 'warraq-jidran-almatabikh',
     title: 'هل يمكن تركيب ورق جدران في المطبخ بالرياض؟',
     excerpt: 'كل ما تحتاج معرفته عن تركيب ورق الجدران في المطابخ، الأنواع المقاومة للرطوبة والحرارة، ونصائح للحفاظ عليه.',
-    img: '/images/uploaded/img14.jpeg',
+    img: siteImages.blog.post3,
     date: '5 مارس 2025'
   },
   {
     slug: 'limatha-tatahallak-almuthalah',
     title: 'لماذا تتهالك المظلة بعد سنة في الرياض؟ — الأسباب والحل',
     excerpt: 'أسباب تلف المظلات السريع في مناخ الرياض الحار، وكيف تختار المواد المناسبة (مثل الفيبر جلاس) لتدوم لسنوات.',
-    img: '/images/uploaded/img15.jpeg',
+    img: siteImages.blog.post4,
     date: '1 مارس 2025'
   },
   {
     slug: 'altarmim-am-aldahan-aljadid',
     title: 'الترميم أم الدهان الجديد؟ — متى تحتاج كل منهما',
     excerpt: 'دليل مبسط لمعرفة ما إذا كان جدارك يحتاج إلى دهان جديد فقط أم إلى عملية ترميم ومعالجة شاملة قبل الدهان.',
-    img: '/images/uploaded/img16.jpeg',
+    img: siteImages.blog.post1,
     date: '25 فبراير 2025'
   },
   {
     slug: 'afdal-dahanat-lilmanatiq-alharrah',
     title: 'أفضل أنواع الدهانات لمناخ الرياض الحار — دليل شامل 2025',
     excerpt: 'تعرف على الدهانات التي تتحمل حرارة الصيف القاسية في الرياض وتحافظ على ألوانها دون بهتان.',
-    img: '/images/uploaded/img17.jpeg',
+    img: siteImages.blog.post6,
     date: '20 فبراير 2025'
   }
 ];

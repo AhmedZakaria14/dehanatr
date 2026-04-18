@@ -5,17 +5,18 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import CallButton from '@/components/CallButton';
+import { siteImages } from '@/lib/siteImages';
 
 export default function Home() {
   const services = [
-    { title: 'دهانات داخلية وخارجية', desc: 'دهانات جوتن والجزيرة بضمان 5 سنوات', link: '/services/painting', img: '/images/uploaded/img20.jpeg' },
-    { title: 'أعمال الجبس بورد', desc: 'أسقف معلقة وديكورات جدارية حديثة', link: '/services/gypsum', img: '/images/uploaded/img21.jpeg' },
-    { title: 'دهانات الإيبوكسي', desc: 'أرضيات إيبوكسي مقاومة للرطوبة والخدوش', link: '/services/epoxy', img: '/images/uploaded/img22.jpeg' },
-    { title: 'أعمال الترميم', desc: 'معالجة الرطوبة والشقوق قبل الدهان', link: '/services/renovation', img: '/images/uploaded/img23.jpeg' },
-    { title: 'ورق الجدران', desc: 'تركيب ورق جدران احترافي لجميع الغرف', link: '/services/wallpaper', img: '/images/uploaded/img24.jpeg' },
-    { title: 'مظلات وسواتر', desc: 'تركيب مظلات سيارات وسواتر بجودة عالية', link: '/services/shelters', img: '/images/uploaded/img25.jpeg' },
-    { title: 'تركيب قرميد', desc: 'قرميد واجهات وأسقف بألوان متعددة', link: '/services/tiles', img: '/images/uploaded/img26.jpeg' },
-    { title: 'ديكورات دهان', desc: 'تعتيق، ترخيم، وروعة، وإبداع', link: '/services/painting', img: '/images/uploaded/img27.jpeg' },
+    { title: 'دهانات داخلية وخارجية', desc: 'دهانات جوتن والجزيرة بضمان 5 سنوات', link: '/services/painting', img: siteImages.services.painting },
+    { title: 'أعمال الجبس بورد', desc: 'أسقف معلقة وديكورات جدارية حديثة', link: '/services/gypsum', img: siteImages.services.gypsum },
+    { title: 'دهانات الإيبوكسي', desc: 'أرضيات إيبوكسي مقاومة للرطوبة والخدوش', link: '/services/epoxy', img: siteImages.services.epoxy },
+    { title: 'أعمال الترميم', desc: 'معالجة الرطوبة والشقوق قبل الدهان', link: '/services/renovation', img: siteImages.services.renovation },
+    { title: 'ورق الجدران', desc: 'تركيب ورق جدران احترافي لجميع الغرف', link: '/services/wallpaper', img: siteImages.services.wallpaper },
+    { title: 'مظلات وسواتر', desc: 'تركيب مظلات سيارات وسواتر بجودة عالية', link: '/services/shelters', img: siteImages.services.shelters },
+    { title: 'تركيب قرميد', desc: 'قرميد واجهات وأسقف بألوان متعددة', link: '/services/tiles', img: siteImages.services.tiles },
+    { title: 'ديكورات دهان', desc: 'تعتيق، ترخيم، وروعة، وإبداع', link: '/services/painting', img: siteImages.services.decorative },
   ];
 
   const areas = [
@@ -42,7 +43,7 @@ export default function Home() {
         <section className="relative bg-dark-primary text-white py-24 lg:py-32 overflow-hidden">
           <div className="absolute inset-0 opacity-40">
             <Image 
-              src="/images/uploaded/img34.jpeg"
+              src={siteImages.hero}
               alt="معلم دهانات الرياض يعمل على دهان حائط"
               fill
               className="object-cover"

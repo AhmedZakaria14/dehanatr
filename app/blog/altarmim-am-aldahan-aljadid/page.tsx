@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
+import { siteImages } from '@/lib/siteImages';
 
 export const metadata: Metadata = {
   title: 'الترميم أم الدهان الجديد؟ — متى تحتاج كل منهما',
@@ -11,7 +12,7 @@ export default function BlogPost5() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "الترميم أم الدهان الجديد؟ — متى تحتاج كل منهما",
-    "image": "/images/uploaded/img4.jpeg",
+    "image": siteImages.blog.post1,
     "author": { "@type": "Organization", "name": "معلم دهانات الرياض" },
     "publisher": { "@type": "Organization", "name": "معلم دهانات الرياض", "logo": { "@type": "ImageObject", "url": "https://dahanat-alriyadh.com/images/logo.png" } },
     "datePublished": "2025-02-25"
@@ -20,7 +21,7 @@ export default function BlogPost5() {
   return (
     <BlogLayout
       title="الترميم أم الدهان الجديد؟ — متى تحتاج كل منهما"
-      image="/images/uploaded/img5.jpeg"
+      image={siteImages.blog.post1}
       imageAlt="ترميم ودهانات"
       schema={articleSchema}
       ctaText="استشرنا مجاناً"

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Header from '@/components/Header';
+import { siteImages } from '@/lib/siteImages';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import CallButton from '@/components/CallButton';
@@ -18,7 +19,7 @@ export default function GypsumServicePage() {
         <section className="relative bg-dark-primary text-white py-20">
           <div className="absolute inset-0 opacity-30">
             <Image 
-              src="/images/uploaded/img30.jpeg"
+              src={siteImages.servicePages.gypsum}
               alt="جبس بورد الرياض"
               fill
               className="object-cover"
@@ -42,11 +43,11 @@ export default function GypsumServicePage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
               <div className="relative h-64 rounded-xl overflow-hidden shadow-md">
-                <Image src="/images/uploaded/img31.jpeg" alt="أسقف جبس بورد" fill className="object-cover"  />
+                <Image src={siteImages.servicePages.gypsumCeiling} alt="أسقف جبس بورد" fill className="object-cover"  />
                 <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 font-bold">أسقف معلقة وإضاءة مخفية</div>
               </div>
               <div className="relative h-64 rounded-xl overflow-hidden shadow-md">
-                <Image src="/images/uploaded/img32.jpeg" alt="ديكورات جدارية" fill className="object-cover"  />
+                <Image src={siteImages.servicePages.gypsumWall} alt="ديكورات جدارية" fill className="object-cover"  />
                 <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 font-bold">ديكورات جدارية وشاشات</div>
               </div>
             </div>

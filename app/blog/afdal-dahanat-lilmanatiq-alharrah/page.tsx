@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import BlogLayout from '@/components/BlogLayout';
+import { siteImages } from '@/lib/siteImages';
 
 export const metadata: Metadata = {
   title: 'أفضل أنواع الدهانات لمناخ الرياض الحار — دليل شامل 2025',
@@ -11,7 +12,7 @@ export default function BlogPost6() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "أفضل أنواع الدهانات لمناخ الرياض الحار — دليل شامل 2025",
-    "image": "/images/uploaded/img2.jpeg",
+    "image": siteImages.blog.post6,
     "author": { "@type": "Organization", "name": "معلم دهانات الرياض" },
     "publisher": { "@type": "Organization", "name": "معلم دهانات الرياض", "logo": { "@type": "ImageObject", "url": "https://dahanat-alriyadh.com/images/logo.png" } },
     "datePublished": "2025-02-20"
@@ -20,7 +21,7 @@ export default function BlogPost6() {
   return (
     <BlogLayout
       title="أفضل أنواع الدهانات لمناخ الرياض الحار — دليل شامل 2025"
-      image="/images/uploaded/img3.jpeg"
+      image={siteImages.blog.post6}
       imageAlt="دهانات خارجية للرياض"
       schema={articleSchema}
       ctaText="اطلب دهان واجهة منزلك الآن"

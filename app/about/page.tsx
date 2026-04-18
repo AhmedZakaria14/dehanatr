@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import CallButton from '@/components/CallButton';
+import { siteImages } from '@/lib/siteImages';
 
 export const metadata: Metadata = {
   title: 'من نحن | معلم دهانات الرياض – خبرة 10 سنوات في الدهانات',
@@ -20,7 +21,7 @@ export default function AboutPage() {
         <section className="relative bg-dark-primary text-white py-24">
           <div className="absolute inset-0 opacity-30">
             <Image 
-              src="/images/uploaded/img1.jpeg"
+              src={siteImages.gallery[0]}
               alt="معلم دهانات الرياض"
               fill
               className="object-cover"
