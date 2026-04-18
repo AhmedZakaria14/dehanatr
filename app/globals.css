@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #f59e0b;
+  --color-dark-primary: #111827;
+  --color-dark-secondary: #1f2937;
+  --font-arabic: var(--font-cairo), sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-arabic text-dark-primary bg-gray-50;
+  }
+}
