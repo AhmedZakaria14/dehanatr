@@ -18,7 +18,7 @@ export default function RenovationServicePage() {
         <section className="relative bg-dark-primary text-white py-20">
           <div className="absolute inset-0 opacity-30">
             <Image
-              src="/images/uploaded/img65.jpeg"
+              src="/images/uploaded/img23.jpeg"
               alt="ترميم منازل الرياض"
               fill
               className="object-cover"

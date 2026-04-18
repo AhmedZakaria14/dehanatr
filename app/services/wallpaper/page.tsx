@@ -18,7 +18,7 @@ export default function WallpaperServicePage() {
         <section className="relative bg-dark-primary text-white py-20">
           <div className="absolute inset-0 opacity-30">
             <Image 
-              src="/images/uploaded/img68.jpeg"
+              src="/images/uploaded/img24.jpeg"
               alt="ورق جدران الرياض"
               fill
               className="object-cover"

@@ -18,7 +18,7 @@ export default function EpoxyServicePage() {
         <section className="relative bg-dark-primary text-white py-20">
           <div className="absolute inset-0 opacity-30">
             <Image 
-              src="/images/uploaded/img47.jpeg"
+              src="/images/uploaded/img33.jpeg"
               alt="دهانات إيبوكسي الرياض"
               fill
               className="object-cover"

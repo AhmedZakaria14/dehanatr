@@ -18,7 +18,7 @@ export default function TilesServicePage() {
         <section className="relative bg-dark-primary text-white py-20">
           <div className="absolute inset-0 opacity-30">
             <Image 
-              src="/images/uploaded/img67.jpeg"
+              src="/images/uploaded/img26.jpeg"
               alt="تركيب قرميد الرياض"
               fill
               className="object-cover"

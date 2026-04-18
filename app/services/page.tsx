@@ -14,14 +14,14 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   const services = [
-    { title: 'دهانات داخلية وخارجية', desc: 'دهانات جوتن والجزيرة بضمان 5 سنوات', link: '/services/painting', img: '/images/uploaded/img51.jpeg' },
-    { title: 'أعمال الجبس بورد', desc: 'أسقف معلقة وديكورات جدارية حديثة', link: '/services/gypsum', img: '/images/uploaded/img52.jpeg' },
-    { title: 'دهانات الإيبوكسي', desc: 'أرضيات إيبوكسي مقاومة للرطوبة والخدوش', link: '/services/epoxy', img: '/images/uploaded/img53.jpeg' },
-    { title: 'أعمال الترميم', desc: 'معالجة الرطوبة والشقوق قبل الدهان', link: '/services/renovation', img: '/images/uploaded/img54.jpeg' },
-    { title: 'ورق الجدران', desc: 'تركيب ورق جدران احترافي لجميع الغرف', link: '/services/wallpaper', img: '/images/uploaded/img55.jpeg' },
-    { title: 'مظلات وسواتر', desc: 'تركيب مظلات سيارات وسواتر بجودة عالية', link: '/services/shelters', img: '/images/uploaded/img56.jpeg' },
-    { title: 'تركيب قرميد', desc: 'قرميد واجهات وأسقف بألوان متعددة', link: '/services/tiles', img: '/images/uploaded/img57.jpeg' },
-    { title: 'ديكورات دهان', desc: 'تعتيق، ترخيم، وروعة، وإبداع', link: '/services/painting', img: '/images/uploaded/img58.jpeg' },
+    { title: 'دهانات داخلية وخارجية', desc: 'دهانات جوتن والجزيرة بضمان 5 سنوات', link: '/services/painting', img: '/images/uploaded/img20.jpeg' },
+    { title: 'أعمال الجبس بورد', desc: 'أسقف معلقة وديكورات جدارية حديثة', link: '/services/gypsum', img: '/images/uploaded/img21.jpeg' },
+    { title: 'دهانات الإيبوكسي', desc: 'أرضيات إيبوكسي مقاومة للرطوبة والخدوش', link: '/services/epoxy', img: '/images/uploaded/img22.jpeg' },
+    { title: 'أعمال الترميم', desc: 'معالجة الرطوبة والشقوق قبل الدهان', link: '/services/renovation', img: '/images/uploaded/img23.jpeg' },
+    { title: 'ورق الجدران', desc: 'تركيب ورق جدران احترافي لجميع الغرف', link: '/services/wallpaper', img: '/images/uploaded/img24.jpeg' },
+    { title: 'مظلات وسواتر', desc: 'تركيب مظلات سيارات وسواتر بجودة عالية', link: '/services/shelters', img: '/images/uploaded/img25.jpeg' },
+    { title: 'تركيب قرميد', desc: 'قرميد واجهات وأسقف بألوان متعددة', link: '/services/tiles', img: '/images/uploaded/img26.jpeg' },
+    { title: 'ديكورات دهان', desc: 'تعتيق، ترخيم، وروعة، وإبداع', link: '/services/painting', img: '/images/uploaded/img27.jpeg' },
   ];
 
   const itemListSchema = {
