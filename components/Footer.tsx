@@ -73,8 +73,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-800 pt-8 flex flex-col items-center gap-3 text-center text-gray-400">
           <p>© {new Date().getFullYear()} معلم دهانات الرياض. جميع الحقوق محفوظة.</p>
+          <p className="text-sm">
+            تم التصميم والتطوير بواسطة{' '}
+            <a 
+              href="https://nasharhub.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gold font-bold hover:text-white transition-colors"
+            >
+              NasharHub.com
+            </a>
+          </p>
         </div>
       </div>
     </footer>
